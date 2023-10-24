@@ -3,5 +3,5 @@ username = 'Noa'
 userid = 'SpartanProject_1'
 
 #AI Data
-AIname = 'Alpha'
+AIname = 'alpha'
 AIid = 'SpartanProject_Alpha'
