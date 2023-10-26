@@ -11,7 +11,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
 global first_time
-first_time = False
+first_time = True
 
 def say(_string):
     engine.say(_string)
@@ -30,13 +30,31 @@ while True:
 
             print(text)
 
-            if f'hey {AIname}' in text:
-                if first_time == True:
-                    engine.say(f'Hello {username} i am {AIname} your personal ai')
-                    engine.runAndWait()
-                    first_time = False
-                else:
-                    say(f'what can i do for you {username}')
+            if f'hey {AIname}' in text or f'ok {AIname}' in text:
+                if text == f'hey {AIname}' or text == f'ok {AIname}':
+                    if first_time == True:
+                        say(f'Hello {username} i am {AIname} your personal ai')
+                    else:
+                        say(f'what can i do for you {username}')
+
+                string = text  
+                split_string = string.split(' ')  
+                new_string_list = split_string[0:][2:]
+                command = ' '.join(new_string_list).lower()
+                print(command)
+
+                if 'say' in command:
+                    string = text  
+                    split_string = string.split(' ')  
+                    new_string_list = split_string[3:]
+                    speach = ' '.join(new_string_list).lower()
+                    print(command)
+                    say(speach)
+
+
+                if command == 'exit':
+                    break
+                    exit()
                     
             
 
@@ -47,3 +65,5 @@ while True:
         print('say something..')
         r = sr.Recognizer()
         continue
+
+exit()
