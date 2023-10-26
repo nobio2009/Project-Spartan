@@ -27,7 +27,15 @@ def slice():
     string = input('')
     first_word = string.split()[0]
     remaining_string = string[len(first_word):]
+
     print(remaining_string)
 
+def slice2():
+    string = 'this is a string'  
+    split_string = string.split(' ')  
+    new_string_list = split_string[0:][2:]
+    new_string = ' '.join(new_string_list)  
+    print(new_string)
 
-slice()
+
+slice2()
