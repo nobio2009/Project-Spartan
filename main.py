@@ -39,7 +39,7 @@ while True:
                     else:
                         say(f'what can i do for you {username}')
 
-                string = 'this is a string'  
+                string = text  
                 split_string = string.split(' ')  
                 new_string_list = split_string[0:][2:]
                 new_string = ' '.join(new_string_list)  
