@@ -10,7 +10,7 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
-global first_time
+
 first_time = True
 
 def say(_string):
@@ -34,6 +34,7 @@ while True:
                 if text == f'hey {AIname}' or text == f'ok {AIname}':
                     if first_time == True:
                         say(f'Hello {username} i am {AIname} your personal ai')
+                        first_time = False
                     else:
                         say(f'what can i do for you {username}')
 

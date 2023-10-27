@@ -1,10 +1,10 @@
 import time
 def save(username, user_id, ai_name, ai_id):
-        f = open("save.py", "w")
-        f.write(f"username = {username}" + "\n")
-        f.write(f"userid = {user_id}" + "\n")
-        f.write(f"AIname = {ai_name}" + "\n")
-        f.write(f"AIid = {ai_id}" + "\n")
+        f = open("data.py", "w")
+        f.write(f"username = \'{username}\'" + "\n")
+        f.write(f"userid = \'{user_id}\'" + "\n")
+        f.write(f"AIname = \'{ai_name}\'" + "\n")
+        f.write(f"AIid = \'{ai_id}\'" + "\n")
         f.close()
 
 
