@@ -17,8 +17,7 @@ def say(_string):
     engine.say(_string)
     engine.runAndWait()
     
-
-                
+   
 while True:
     try:
         with sr.Microphone() as source:
