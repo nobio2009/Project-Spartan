@@ -41,15 +41,17 @@ while True:
                 split_string = string.split(' ')  
                 new_string_list = split_string[0:][2:]
                 command = ' '.join(new_string_list).lower()
-                print(command)
+                print(f'User: {username} tried to use command {command}')
 
                 if 'say' in command:
                     string = text  
                     split_string = string.split(' ')  
                     new_string_list = split_string[3:]
                     speach = ' '.join(new_string_list).lower()
-                    print(command)
                     say(speach)
+
+                if 'identification' in command:
+                    say(f'User: {username}, {userid} | AIC: {AIname}, {AIid}')
 
 
                 if command == 'exit':
