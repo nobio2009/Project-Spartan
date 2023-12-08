@@ -1,10 +1,10 @@
 import speech_recognition as sr
 import pyttsx3
 import pywhatkit
-from googlesearch import search
 
 from data import *
 
+#Voice recognition engine stuff
 r = sr.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')

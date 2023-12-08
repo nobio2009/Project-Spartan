@@ -5,7 +5,7 @@ def speak():
 
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[0].id)
+    engine.setProperty('voice', voices[2].id)
 
     engine.say(f'Hello world!')
     engine.runAndWait()
@@ -54,4 +54,4 @@ def webscrape():
 
     print(title)
 
-webscrape()
+speak()
