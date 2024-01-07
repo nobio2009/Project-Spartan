@@ -5,7 +5,7 @@ def speak():
 
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[2].id)
+    engine.setProperty('voice', voices[0].id)
 
     engine.say(f'Hello world!')
     engine.runAndWait()
@@ -53,5 +53,6 @@ def webscrape():
     title = re.sub("<.*?>", "", title) # Remove HTML tags
 
     print(title)
+
 
 speak()

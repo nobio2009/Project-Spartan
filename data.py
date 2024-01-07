@@ -5,3 +5,6 @@ userid = 'SpartanProject_1'
 #AI Data
 AIname = 'alpha'
 AIid = 'SpartanProject_Alpha'
+
+#Security
+passw = ''
