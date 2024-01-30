@@ -3,7 +3,7 @@ username = 'Noa'
 userid = 'SpartanProject_1'
 
 #AI Data
-AIname = 'alpha'
+AIname = 'echo'
 AIid = 'SpartanProject_Alpha'
 
 #Security
