@@ -18,9 +18,9 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
 #Spotify stuff
-sp_username = 's9ulz0uh2m3yu6etr11am2fi4'
-client_id = '289448ca74fe4e45aa385f5b962299fc'
-client_secret = '91dd8f877c914ee69c7c5d3c70440921'
+sp_username = 'user_id'
+client_id = 'client_id'
+client_secret = 'client_secret'
 redirect_url = 'http://localhost:2009/'
 
 scope = "user-read-playback-state, user-modelify-playback-state"
